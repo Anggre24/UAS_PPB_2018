@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sttg.pariwisata.pariwisata_garut.MainActivity"
+    android:background="#1781c5">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pariwisata Garut"
+        android:fontFamily="verdana"
+        android:textSize="16pt"
+        android:textAlignment="center"
+        android:layout_marginTop="20px"
+        android:textColor="#FFF"/>
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="600px"
+        android:layout_height="500px"
+        android:layout_below="@+id/judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/logo_garut" />
+    <Button
+        android:id="@+id/main_menu"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_below="@id/pic"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="40px"
+        android:text="Menu Utama"
+        />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_alignBaseline="@+id/main_menu"
+        android:layout_alignBottom="@+id/main_menu"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/main_menu"
+        android:layout_toRightOf="@+id/main_menu"
+        android:text="EXIT"/>
+</RelativeLayout>

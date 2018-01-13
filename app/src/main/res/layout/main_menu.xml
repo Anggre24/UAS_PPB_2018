@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1781c5">
+
+    <TextView
+        android:id="@+id/judul_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="16pt" />
+
+    <ImageButton
+        android:id="@+id/wisata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:layout_below="@id/judul_2"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="130px"
+        android:background="#1781c5"
+        />
+    <TextView
+        android:id="@+id/txt_wisata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objek Wisata"
+        android:fontFamily="verdana"
+        android:textColor="#fff"
+        android:layout_below="@id/wisata"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="70px"
+        android:textSize="10pt"/>
+    <ImageButton
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_wisata"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="140px"
+        android:src="@drawable/about"
+        android:background="#1781c5"
+        />
+    <TextView
+        android:id="@+id/txt_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tentang"
+        android:fontFamily="verdana"
+        android:textColor="#fff"
+        android:layout_below="@id/about"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="120px"
+        android:textSize="10pt"/>
+
+    <ImageButton
+        android:id="@+id/wisata_kuliner"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_wisata"
+        android:layout_alignLeft="@+id/txt_kuliner"
+        android:layout_alignStart="@+id/txt_kuliner"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:background="#1781c5"
+        android:src="@drawable/kuliner" />
+
+    <TextView
+        android:id="@+id/txt_kuliner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_wisata"
+        android:layout_alignBottom="@+id/txt_wisata"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="verdana"
+        android:text="Wisata Kuliner"
+        android:textColor="#fff"
+        android:textSize="10pt" />
+
+</RelativeLayout>
